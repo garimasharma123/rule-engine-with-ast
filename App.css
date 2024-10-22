@@ -1,0 +1,164 @@
+/* App.css */
+body {
+  background-color: #6298c7; /* Light blue background */
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.app-header {
+  background-color: #343a40; /* Darker background for the header */
+  color: white;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow to the header */
+}
+
+.rule-engine-container {
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for card effect */
+  margin: 40px auto;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #343a40;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #61dafb;
+  padding-bottom: 5px;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 15px;
+  font-size: 1rem;
+  border: 2px solid #61dafb;
+  border-radius: 5px;
+  background-color: #eaf4fc; /* Light background for input fields */
+  margin-bottom: 20px;
+  resize: vertical;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.rule-input, .data-input {
+  background-color: #f9fcff; /* Slightly lighter background for input */
+}
+
+.rule-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.rule-item {
+  background-color: #f4f8fc;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border-left: 4px solid #61dafb; /* Accent border for list items */
+  font-family: monospace; /* Monospace font for rules */
+}
+
+.btn {
+  background-color: #61dafb;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Button shadow */
+  margin-right: 10px;
+}
+
+.btn:hover {
+  background-color: #21a1f1;
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.btn:active {
+  transform: scale(0.98); /* Button press effect */
+}
+
+.evaluate-section, .rule-section {
+  margin-bottom: 30px;
+}
+
+.result {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #2c662d;
+  background-color: #eaf8ea;
+  padding: 15px;
+  border-left: 5px solid #2c662d;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .rule-engine-container {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .rule-engine-container {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-header {
+    font-size: 2rem;
+    padding: 5px;
+  }
+
+  .rule-engine-container {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  textarea {
+    height: 80px;
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  .result {
+    font-size: 1.1rem;
+  }
+}
